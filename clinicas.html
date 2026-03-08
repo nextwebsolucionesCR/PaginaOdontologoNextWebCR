@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title>Sedes | masSonrrisa</title>
+</head>
+
+<body>
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-logo">masSonrrisa<span style="color:var(--color-accent)">.</span></div>
+        </div>
+    </div>
+
+    <!-- NAVBAR (Same as index) -->
+    <!-- SIDEBAR NAVIGATION (Desktop) & MOBILE TOP BAR -->
+    <nav class="sidebar-nav" id="navbar">
+        <div class="sidebar-header">
+            <a href="index.html" class="sidebar-logo">
+                <span class="logo-icon">M<span style="color:var(--color-accent)">.</span></span>
+                <span class="logo-text">masSonrrisa</span>
+            </a>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="sidebar-links">
+            <a href="index.html" class="side-link">
+                <i class="fas fa-home"></i>
+                <span class="link-text">Inicio</span>
+            </a>
+            <a href="index.html#acerca" class="side-link">
+                <i class="fas fa-user-md"></i>
+                <span class="link-text">Acerca</span>
+            </a>
+            <a href="servicios.html" class="side-link">
+                <i class="fas fa-tooth"></i>
+                <span class="link-text">Servicios</span>
+            </a>
+            <a href="index.html#testimonios" class="side-link">
+                <i class="fas fa-comment-dots"></i>
+                <span class="link-text">Testimonios</span>
+            </a>
+            <a href="clinicas.html" class="side-link active">
+                <i class="fas fa-map-marker-alt"></i>
+                <span class="link-text">Clínicas</span>
+            </a>
+        </div>
+
+        <div class="sidebar-footer">
+            <a href="index.html#contacto" class="btn-sidebar">
+                <i class="fas fa-calendar-check"></i>
+                <span class="link-text">Agendar</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="menu-overlay" id="menu-overlay"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-header">
+            <span class="mobile-logo">masSonrrisa<span style="color:var(--color-accent)">.</span></span>
+            <button class="close-menu" id="close-menu">&times;</button>
+        </div>
+        <a href="index.html" class="mobile-nav-link">Inicio</a>
+        <a href="servicios.html" class="mobile-nav-link">Servicios</a>
+        <a href="clinicas.html" class="mobile-nav-link text-accent">Clínicas</a>
+        <a href="index.html#contacto" class="btn mobile-btn">Agendar Cita</a>
+    </div>
+
+    <!-- HEADER -->
+    <section class="page-header" style="background: var(--color-bg-alt); padding-top: 120px; padding-bottom: 4rem;">
+        <div class="container text-center">
+            <span class="section-subtitle">Nuestra Red</span>
+            <h1 class="section-title reveal">Encuentra tu Sede masSonrrisa</h1>
+            <p class="section-desc-center reveal">Cuatro ubicaciones estratégicas para estar siempre cerca de ti.</p>
+        </div>
+    </section>
+
+    <!-- LOCATIONS LIST -->
+    <section class="locations-section">
+        <div class="container">
+            <!-- LIBERIA -->
+            <div class="location-block reveal">
+                <div class="location-img">
+                    <img src="img/locales/local1.jpg" alt="Sede Liberia" loading="lazy">
+                </div>
+                <div class="location-info">
+                    <h2>Liberia</h2>
+                    <p class="address"><i class="fas fa-map-marker-alt"></i> 200m este del Banco Central.</p>
+                    <p class="desc">Nuestra sede principal en Guanacaste, equipada con tecnología 3D y amplias salas de
+                        espera.</p>
+                    <div class="map-actions">
+                        <button class="btn btn-outline" onclick="loadMap('liberia', 'google')"><i
+                                class="fab fa-google"></i> Google Maps</button>
+                        <button class="btn btn-outline" onclick="loadMap('liberia', 'waze')"><i class="fab fa-waze"></i>
+                            Waze</button>
+                    </div>
+                    <div id="map-liberia" class="map-container"></div>
+                </div>
+            </div>
+
+            <!-- CARTAGO -->
+            <div class="location-block reverse">
+                <div class="location-img">
+                    <img src="img/locales/local4.jpg" alt="Sede Cartago" loading="lazy">
+                </div>
+                <div class="location-info">
+                    <h2>Cartago</h2>
+                    <p class="address"><i class="fas fa-map-marker-alt"></i> 400m norte de Restaurante Food.</p>
+                    <p class="desc">Ubicada en el corazón de la vieja metrópoli, con fácil acceso y parqueo privado.</p>
+                    <div class="map-actions">
+                        <button class="btn btn-outline" onclick="loadMap('cartago', 'google')"><i
+                                class="fab fa-google"></i> Google Maps</button>
+                        <button class="btn btn-outline" onclick="loadMap('cartago', 'waze')"><i class="fab fa-waze"></i>
+                            Waze</button>
+                    </div>
+                    <div id="map-cartago" class="map-container"></div>
+                </div>
+            </div>
+
+            <!-- PUNTARENAS -->
+            <div class="location-block reveal">
+                <div class="location-img">
+                    <img src="img/locales/local3.jpg" alt="Sede Puntarenas" loading="lazy">
+                </div>
+                <div class="location-info">
+                    <h2>Puntarenas</h2>
+                    <p class="address"><i class="fas fa-map-marker-alt"></i> 100m este de McDonald's.</p>
+                    <p class="desc">Disfruta de la brisa marina mientras cuidas tu sonrisa en nuestras modernas
+                        instalaciones.</p>
+                    <div class="map-actions">
+                        <button class="btn btn-outline" onclick="loadMap('puntarenas', 'google')"><i
+                                class="fab fa-google"></i> Google Maps</button>
+                        <button class="btn btn-outline" onclick="loadMap('puntarenas', 'waze')"><i
+                                class="fab fa-waze"></i> Waze</button>
+                    </div>
+                    <div id="map-puntarenas" class="map-container"></div>
+                </div>
+            </div>
+
+            <!-- TAMARINDO -->
+            <div class="location-block reverse">
+                <div class="location-img">
+                    <img src="img/locales/local2.jpg" alt="Sede Tamarindo" loading="lazy">
+                </div>
+                <div class="location-info">
+                    <h2>Tamarindo</h2>
+                    <p class="address"><i class="fas fa-map-marker-alt"></i> 50m sur de Taco Bell.</p>
+                    <p class="desc">Atención bilingüe y especializada para turistas y residentes de la zona costera.</p>
+                    <div class="map-actions">
+                        <button class="btn btn-outline" onclick="loadMap('tamarindo', 'google')"><i
+                                class="fab fa-google"></i> Google Maps</button>
+                        <button class="btn btn-outline" onclick="loadMap('tamarindo', 'waze')"><i
+                                class="fab fa-waze"></i> Waze</button>
+                    </div>
+                    <div id="map-tamarindo" class="map-container"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>masSonrrisa<span style="color:var(--color-accent)">.</span></h3>
+                <p>Tu clínica dental de confianza.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces</h4>
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="clinicas.html">Sedes</a>
+                <a href="privacidad.html">Privacidad</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>info@massonrrisa.cr</p>
+                <p>+506 8888-8888</p>
+            </div>
+            <div class="footer-col">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Clínica Dental masSonrrisa.</p>
+        </div>
+    </footer>
+
+    <!-- STYLES -->
+    <style>
+        .location-block {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-bottom: 4rem;
+            background: #fff;
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .location-img {
+            width: 100%;
+            height: 300px;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+        }
+
+        .location-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .location-info h2 {
+            font-size: 2rem;
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .address {
+            font-size: 1.1rem;
+            color: var(--color-accent-dark);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .desc {
+            color: var(--color-text-light);
+            margin-bottom: 1.5rem;
+        }
+
+        .map-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--color-primary);
+            color: var(--color-primary);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+        }
+
+        .btn-outline:hover {
+            background: var(--color-primary);
+            color: #fff;
+        }
+
+        .map-container {
+            width: 100%;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border-radius: var(--radius-sm);
+            border: none;
+        }
+
+        @media (min-width: 900px) {
+            .location-block {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .location-block.reverse {
+                flex-direction: row-reverse;
+            }
+
+            .location-img {
+                width: 50%;
+                height: 400px;
+            }
+
+            .location-info {
+                width: 50%;
+                padding: 0 2rem;
+            }
+        }
+    </style>
+
+    <script src="js/main.js?v=1.0"></script>
+    <script>
+        // Map Data (Placeholders - TODO: User needs to update these)
+        const maps = {
+            'liberia': {
+                'google': 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15709.664457930855!2d-85.4463378!3d10.6346267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f75871f34608c0d%3A0xe6bf44792d774f76!2sLiberia!5e0!3m2!1ses!2scr!4v1680000000000!5m2!1ses!2scr',
+                'waze': 'https://embed.waze.com/iframe?zoom=16&lat=10.6346&lon=-85.4409&ct=livemap'
+            },
+            'cartago': {
+                'google': 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31433.68965851083!2d-83.935109!3d9.863806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0df9a79743c3d%3A0x6291a89c9704c7c8!2sCartago%2C%20Provincia%20de%20Cartago%2C%20Cartago!5e0!3m2!1ses!2scr!4v1680000000000!5m2!1ses!2scr',
+                'waze': 'https://embed.waze.com/iframe?zoom=16&lat=9.8638&lon=-83.9161&ct=livemap'
+            },
+            'puntarenas': {
+                'google': 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31460.67232379342!2d-84.856272!3d9.976251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa02b9e7d770c0f%3A0x2646638025211904!2sPuntarenas%2C%20Provincia%20de%20Puntarenas%2C%20Puntarenas!5e0!3m2!1ses!2scr!4v1680000000000!5m2!1ses!2scr',
+                'waze': 'https://embed.waze.com/iframe?zoom=16&lat=9.9763&lon=-84.8383&ct=livemap'
+            },
+            'tamarindo': {
+                'google': 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15732.123456789012!2d-85.845678!3d10.298765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f9e312345678901%3A0x1234567890abcdef!2sTamarindo!5e0!3m2!1ses!2scr!4v1680000000000!5m2!1ses!2scr',
+                'waze': 'https://embed.waze.com/iframe?zoom=16&lat=10.2993&lon=-85.8423&ct=livemap'
+            }
+        };
+
+        function loadMap(location, type) {
+            const container = document.getElementById(`map-${location}`);
+            if (!container) return;
+
+            // TODO: User needs to provide real Map URLs
+            let url = maps[location][type];
+
+            container.innerHTML = `<iframe src="${url}" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
+        }
+    </script>
+
+    <!-- FLOATING ICONS (Reuse) -->
+    <a href="https://wa.me/50688888888" class="float-btn float-whatsapp pulse-anim" target="_blank"><i
+            class="fab fa-whatsapp"></i></a>
+    <a href="tel:+50688888888" class="float-btn float-phone pulse-anim"><i class="fas fa-phone"></i></a>
+    <!-- DEVELOPER BADGE -->
+    <a href="https://nextweb.cr" target="_blank" class="developer-badge">
+        <img src="img/logo.png" alt="NextWeb CR">
+        <span>Desarrollado por <strong>NextWeb CR</strong></span>
+    </a>
+
+    <!-- TAWK.TO SCRIPT -->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/69633d7c987b03197cb20051/1jelqgcbd';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Cache Busting Rule: Always update version parameter -->
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <title>Clínica Dental masSonrrisa | Dr. Raul Martinez</title>
+    <meta name="description"
+        content="10 años creando sonrisas perfectas. Clínica Dental masSonrrisa en Costa Rica. Tecnología avanzada y atención personalizada.">
+    <meta property="og:title" content="Clínica Dental masSonrrisa">
+    <meta property="og:description" content="10 años creando sonrisas perfectas. Agenda tu cita hoy.">
+    <meta property="og:type" content="website">
+</head>
+
+<body>
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-logo">masSonrrisa<span style="color:var(--color-accent)">.</span></div>
+        </div>
+    </div>
+
+    <!-- NAVBAR (Classic Transparent) -->
+    <!-- SIDEBAR NAVIGATION (Desktop) & MOBILE TOP BAR -->
+    <nav class="sidebar-nav" id="navbar">
+        <div class="sidebar-header">
+            <a href="index.html" class="sidebar-logo">
+                <span class="logo-icon">M<span style="color:var(--color-accent)">.</span></span>
+                <span class="logo-text">masSonrrisa</span>
+            </a>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="sidebar-links">
+            <a href="index.html" class="side-link active">
+                <i class="fas fa-home"></i>
+                <span class="link-text">Inicio</span>
+            </a>
+            <a href="#acerca" class="side-link">
+                <i class="fas fa-user-md"></i>
+                <span class="link-text">Acerca</span>
+            </a>
+            <a href="servicios.html" class="side-link">
+                <i class="fas fa-tooth"></i>
+                <span class="link-text">Servicios</span>
+            </a>
+            <a href="#testimonios" class="side-link">
+                <i class="fas fa-comment-dots"></i>
+                <span class="link-text">Testimonios</span>
+            </a>
+            <a href="clinicas.html" class="side-link">
+                <i class="fas fa-map-marker-alt"></i>
+                <span class="link-text">Clínicas</span>
+            </a>
+        </div>
+
+        <div class="sidebar-footer">
+            <a href="#contacto" class="btn-sidebar">
+                <i class="fas fa-calendar-check"></i>
+                <span class="link-text">Agendar</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#inicio" class="mobile-nav-link">Inicio</a>
+        <a href="#acerca" class="mobile-nav-link">Acerca</a>
+        <a href="servicios.html" class="mobile-nav-link">Servicios</a>
+        <a href="#testimonios" class="mobile-nav-link">Testimonios</a>
+        <a href="clinicas.html" class="mobile-nav-link">Clínicas</a>
+        <a href="#contacto" class="btn" style="width:100%; text-align:center;">Agendar Cita</a>
+    </div>
+
+    <!-- HERO SECTION -->
+    <!-- HERO SECTION (Glass Facet) -->
+    <header class="hero" id="inicio">
+        <!-- Background Slider -->
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('img/hero/hero1.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('img/hero/hero2.png');"></div>
+            <div class="hero-slide" style="background-image: url('img/hero/hero3.png');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+
+        <!-- Glass Facet Content -->
+        <div class="hero-facet-container">
+            <div class="glass-facet">
+                <div class="facet-content">
+                    <span class="facet-subtitle">Dr. Raul Martinez</span>
+                    <h1 class="facet-title">SONRRISA<br>PERFECTA</h1>
+                    <p class="facet-desc">Odontología de alta precisión y estética avanzada.</p>
+                    <a href="https://calendar.app.google/3RkVF37YLW5dv8FWA" target="_blank" class="btn-facet">Reservar
+                        Cita</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ACERCA SECTION (Magazine Layout) -->
+    <section id="acerca" class="acerca magazine-layout">
+        <div class="container magazine-container">
+            <!-- Col 1: Sticky Title & Text -->
+            <div class="magazine-content">
+                <span class="section-subtitle">Sobre Nosotros</span>
+                <h2 class="section-title reveal">Pasión por la <br><span class="highlight">Excelencia</span></h2>
+
+                <div class="magazine-text-block">
+                    <p class="section-desc">
+                        En <strong>masSonrrisa</strong>, redefinimos la odontología fusionando <em>arte, precisión y
+                            tecnología</em>.
+                        Bajo la visión del <strong>Dr. Raul Martinez</strong>, cada tratamiento es una obra maestra
+                        diseñada para durar toda la vida.
+                    </p>
+                    <p class="section-desc">
+                        Más que pacientes, construimos legados de confianza.
+                        Donde la estética de vanguardia se encuentra con el cuidado humano.
+                    </p>
+                </div>
+
+                <div class="stats-minimal">
+                    <div class="stat-unit">
+                        <span class="stat-num">10+</span>
+                        <span class="stat-txt">Años de Trayectoria</span>
+                    </div>
+                    <div class="stat-unit">
+                        <span class="stat-num">5k</span>
+                        <span class="stat-txt">Sonrisas Diseñadas</span>
+                    </div>
+                </div>
+
+                <a href="#contacto" class="btn btn-secondary">Contactar</a>
+            </div>
+
+            <!-- Col 2: Asymmetric Image Grid -->
+            <div class="magazine-visuals">
+                <div class="mag-img-large reveal">
+                    <img src="img/sobreti/acerca1.png" alt="Dr. Raul Martinez" loading="lazy">
+                </div>
+                <div class="mag-img-small parallax-shape" data-speed="0.05">
+                    <img src="img/sobreti/acerca2.png" alt="Detalle Clinica" loading="lazy">
+                </div>
+                <!-- Decorative Elements -->
+                <div class="mag-deco-line"></div>
+                <div class="mag-deco-circle"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFICIOS SECTION (Bento Grid) -->
+    <section id="beneficios" class="beneficios">
+        <!-- Parallax Shapes -->
+        <div class="parallax-shape shape-3" data-speed="0.1"></div>
+
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">¿Por qué elegirnos?</span>
+                <h2 class="section-title reveal">Beneficios <span class="highlight">Exclusivos</span></h2>
+                <p class="section-desc-center">Una experiencia diseñada alrededor de tu confort y resultados.</p>
+            </div>
+
+            <div class="bento-grid">
+                <!-- 1. Technology (Wide) -->
+                <div class="bento-card bento-wide reveal">
+                    <img src="img/beneficios/beneficio1.png" alt="Tecnología 3D" class="bento-bg" loading="lazy">
+                    <div class="bento-overlay"></div>
+                    <div class="bento-content">
+                        <h3>Tecnología 3D</h3>
+                        <p>Diagnósticos precisos con tomografía computarizada para tratamientos mínimamente invasivos.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 2. VIP (Tall) -->
+                <div class="bento-card bento-tall reveal">
+                    <img src="img/beneficios/beneficio2.png" alt="Atención VIP" class="bento-bg" loading="lazy">
+                    <div class="bento-overlay"></div>
+                    <div class="bento-content">
+                        <h3>Atención VIP</h3>
+                        <p>Concierge dental dedicado, citas puntuales y una experiencia diseñada para tu absoluta
+                            comodidad.</p>
+                    </div>
+                </div>
+
+                <!-- 3. Materials (Standard) -->
+                <div class="bento-card reveal">
+                    <img src="img/beneficios/beneficio3.jpg" alt="Materiales Premium" class="bento-bg" loading="lazy">
+                    <div class="bento-overlay"></div>
+                    <div class="bento-content">
+                        <h3>Materiales Premium</h3>
+                        <p>Zirconio y porcelanas certificadas.</p>
+                    </div>
+                </div>
+
+                <!-- 4. Relax (Standard) -->
+                <div class="bento-card reveal">
+                    <img src="img/beneficios/beneficio4.png" alt="Espacios Relax" class="bento-bg" loading="lazy">
+                    <div class="bento-overlay"></div>
+                    <div class="bento-content">
+                        <h3>Espacios Relax</h3>
+                        <p>Aromaterapia y sedación consciente.</p>
+                    </div>
+                </div>
+
+                <!-- 5. Financing (Wide) -->
+                <div class="bento-card bento-wide reveal">
+                    <img src="img/beneficios/beneficio5.png" alt="Financiamiento" class="bento-bg" loading="lazy">
+                    <div class="bento-overlay"></div>
+                    <div class="bento-content">
+                        <h3>Financiamiento Flexible</h3>
+                        <p>Planes a tu medida y opciones de tasa cero para que tu sonrisa no espere.</p>
+                    </div>
+                </div>
+
+                <!-- 6. Guarantee (Standard) -->
+                <div class="bento-card reveal">
+                    <img src="img/beneficios/beneficio6.png" alt="Garantía Real" class="bento-bg" loading="lazy">
+                    <div class="bento-overlay"></div>
+                    <div class="bento-content">
+                        <h3>Garantía Real</h3>
+                        <p>Tratamientos respaldados por escrito.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS SECTION (Mixed Media) -->
+    <section id="testimonios" class="testimonios">
+        <div class="container">
+            <div class="section-header text-center editorial-title-wrapper">
+                <span class="section-subtitle">Lo que dicen de nosotros</span>
+                <span class="watermark-quote">“</span>
+                <h2 class="section-title reveal editorial-title">
+                    <span class="serif-italic">Historias</span> <span class="sans-bold">REALES</span>
+                </h2>
+                <div class="title-accent-line"></div>
+            </div>
+
+            <div class="testi-container">
+                <!-- Video Column -->
+                <div class="testi-videos">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe
+                                src="https://player.vimeo.com/video/1162338295?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                                title="Testimonio 1"></iframe>
+                        </div>
+                        <p class="video-caption">"Recuperé mi confianza gracias al Dr. Martinez"</p>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe
+                                src="https://player.vimeo.com/video/1162343008?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                                title="Testimonio 2"></iframe>
+                        </div>
+                        <p class="video-caption">"El trato es simplemente excepcional"</p>
+                    </div>
+                </div>
+
+                <!-- Text Scroll Column (Vertical Marquee) -->
+                <div class="marquee-vertical">
+                    <div class="marquee-track">
+                        <!-- Set 1 -->
+                        <div class="testi-card glass-card">
+                            <i class="fas fa-quote-left card-icon"></i>
+                            <p>"¡Increíble servicio! Me sentí muy cómodo desde el primer momento."</p>
+                            <div class="author">
+                                <span class="author-name">Carlos M.</span>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <div class="testi-card glass-card">
+                            <i class="fas fa-quote-left card-icon"></i>
+                            <p>"La mejor limpieza dental que me han hecho. Muy detallistas."</p>
+                            <div class="author">
+                                <span class="author-name">Ana S.</span>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <div class="testi-card glass-card">
+                            <i class="fas fa-quote-left card-icon"></i>
+                            <p>"Tenía pánico al dentista, pero aquí me trataron con tanta suavidad que ni lo sentí."</p>
+                            <div class="author">
+                                <span class="author-name">Jorge R.</span>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <div class="testi-card glass-card">
+                            <i class="fas fa-quote-left card-icon"></i>
+                            <p>"Resultados impecables en mi diseño de sonrisa. 100% recomendados."</p>
+                            <div class="author">
+                                <span class="author-name">Sofía L.</span>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+
+                        <!-- Set 2 (Duplicate for Loop) -->
+                        <div class="testi-card glass-card">
+                            <i class="fas fa-quote-left card-icon"></i>
+                            <p>"¡Increíble servicio! Me sentí muy cómodo desde el primer momento."</p>
+                            <div class="author">
+                                <span class="author-name">Carlos M.</span>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <div class="testi-card glass-card">
+                            <i class="fas fa-quote-left card-icon"></i>
+                            <p>"La mejor limpieza dental que me han hecho. Muy detallistas."</p>
+                            <div class="author">
+                                <span class="author-name">Ana S.</span>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <div class="testi-card glass-card">
+                            <i class="fas fa-quote-left card-icon"></i>
+                            <p>"Tenía pánico al dentista, pero aquí me trataron con tanta suavidad que ni lo sentí."</p>
+                            <div class="author">
+                                <span class="author-name">Jorge R.</span>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <div class="testi-card glass-card">
+                            <i class="fas fa-quote-left card-icon"></i>
+                            <p>"Resultados impecables en mi diseño de sonrisa. 100% recomendados."</p>
+                            <div class="author">
+                                <span class="author-name">Sofía L.</span>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gradient Fade Overlays -->
+                    <div class="marquee-fade-top"></div>
+                    <div class="marquee-fade-bottom"></div>
+                </div>
+                <p>"Honestidad y profesionalismo. No te inventan tratamientos."</p>
+                <div class="author">- Roberto G.</div>
+            </div>
+            <div class="testi-card">
+                <p>"Excelente ubicación y facilidad de parqueo. Muy conveniente."</p>
+                <div class="author">- Patricia C.</div>
+            </div>
+            <div class="testi-card">
+                <p>"Precios justos para la calidad que ofrecen. Vale cada colón."</p>
+                <div class="author">- Daniel F.</div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- GALERIA SECTION (Editorial Masonry) -->
+    <section id="galeria" class="galeria editorial-section">
+        <div class="container">
+            <div class="section-header text-center editorial-title-wrapper">
+                <span class="section-subtitle">Nuestras Instalaciones</span>
+                <h2 class="section-title reveal editorial-title">
+                    <span class="serif-italic">Galería</span> <span class="sans-bold">VISUAL</span>
+                </h2>
+                <div class="title-accent-line"></div>
+            </div>
+
+            <div class="editorial-gallery">
+                <!-- 1. Main Feature (Big) -->
+                <div class="gallery-item g-big reveal">
+                    <div class="img-wrapper">
+                        <img src="img/galeria/galeria1.jpg" alt="Sala de Espera VIP" loading="lazy">
+                        <div class="img-overlay">
+                            <span class="img-caption">Sala VIP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Tall Portrait -->
+                <div class="gallery-item g-tall reveal">
+                    <div class="img-wrapper">
+                        <img src="img/galeria/galeria2.jpg" alt="Consultorio Principal" loading="lazy">
+                        <div class="img-overlay">
+                            <span class="img-caption">Consultorio 1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Wide Landscape -->
+                <div class="gallery-item g-wide reveal">
+                    <div class="img-wrapper">
+                        <img src="img/galeria/galeria3.jpg" alt="Tecnología 3D" loading="lazy">
+                        <div class="img-overlay">
+                            <span class="img-caption">Tecnología 3D</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Standard -->
+                <div class="gallery-item reveal">
+                    <div class="img-wrapper">
+                        <img src="img/galeria/galeria4.jpg" alt="Área de Esterilización" loading="lazy">
+                        <div class="img-overlay">
+                            <span class="img-caption">Esterilización</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Standard -->
+                <div class="gallery-item reveal">
+                    <div class="img-wrapper">
+                        <img src="img/galeria/galeria5.jpg" alt="Recepción" loading="lazy">
+                        <div class="img-overlay">
+                            <span class="img-caption">Recepción</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Wide Landscape -->
+                <div class="gallery-item g-wide reveal">
+                    <div class="img-wrapper">
+                        <img src="img/galeria/galeria6.jpg" alt="Fachada" loading="lazy">
+                        <div class="img-overlay">
+                            <span class="img-caption">Fachada</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRAYECTORIA SECTION -->
+    <section class="trayectoria">
+        <div class="container trayectoria-container">
+            <div class="trayectoria-content">
+                <span class="section-subtitle">Nuestro Legado</span>
+                <h2 class="section-title">10 Años Creando Sonrisas</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="year">2013</div>
+                        <p>Inauguración de la primera clínica por el Dr. Raul Martinez.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2016</div>
+                        <p>Expansión a Cartago y adquisición de equipo 3D.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2023</div>
+                        <p>Apertura de sedes en la costa y certificación internacional.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="trayectoria-img">
+                <img src="img/hero/hero3.png" alt="Trayectoria Dr. Martinez" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO SECTION (Apple Style) -->
+    <section id="contacto" class="contacto">
+        <div class="contacto-wrapper">
+            <div class="contacto-visual">
+                <img src="img/contacto/contacto.png" alt="Agenda tu Cita" loading="lazy">
+                <div class="visual-overlay"></div>
+                <div class="visual-content">
+                    <h3 class="serif-italic" style="font-size: 2.5rem; color: white;">Tu Nueva Sonrisa Empieza Aquí</h3>
+                    <p>Agenda tu valoración hoy mismo.</p>
+                </div>
+            </div>
+
+            <div class="contacto-form-container">
+                <div class="form-header">
+                    <span class="section-subtitle">Contáctanos</span>
+                    <h2 class="section-title editorial-title">
+                        <span class="serif-italic">CONSULTA</span> <span class="sans-bold">HOY</span>
+                    </h2>
+                </div>
+
+                <form id="contact-form" class="apple-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ej: 8888-8888" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">¿Cómo podemos ayudarte?</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Describe brevemente lo que necesitas..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-apple">Enviar Solicitud</button>
+                    <p id="form-status" style="margin-top: 1rem; font-size: 0.9rem;"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>masSonrrisa<span style="color:var(--color-accent)">.</span></h3>
+                <p>Tu clínica dental de confianza en Costa Rica.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces</h4>
+                <a href="#inicio">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="clinicas.html">Sedes</a>
+                <a href="privacidad.html">Privacidad</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>info@massonrrisa.cr</p>
+                <p>+506 8888-8888</p>
+            </div>
+            <div class="footer-col">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Clínica Dental masSonrrisa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // Initialize EmailJS with a placeholder or empty if key is unknown
+            // emailjs.init("YOUR_PUBLIC_KEY");
+        })();
+    </script>
+
+    <a href="https://wa.me/50688888888" class="float-btn float-whatsapp pulse-anim" target="_blank"
+        aria-label="Chat WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+50688888888" class="float-btn float-phone pulse-anim" aria-label="Llamar">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <!-- SCRIPTS -->
+    <script src="js/main.js?v=1.0"></script>
+
+    <!-- SVG FILTER (Hidden) for Liquid Distortion -->
+    <svg style="display: none;">
+        <defs>
+            <filter id="liquidFilter">
+                <feTurbulence baseFrequency="0.01 0.01" numOctaves="1" result="warp"></feTurbulence>
+                <feDisplacementMap id="liquidDisplacement" xChannelSelector="R" yChannelSelector="G" scale="0"
+                    in="SourceGraphic" in2="warp"></feDisplacementMap>
+            </filter>
+        </defs>
+    </svg>
+
+    <!-- DEVELOPER BADGE -->
+    <a href="https://nextweb.cr" target="_blank" class="developer-badge">
+        <img src="img/logo.png" alt="NextWeb CR">
+        <span>Desarrollado por <strong>NextWeb CR</strong></span>
+    </a>
+
+    <!-- GLOBAL IMAGE MODAL -->
+    <div id="image-modal" class="image-modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img" alt="Vista ampliada">
+    </div>
+
+    <!-- TAWK.TO SCRIPT -->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/69633d7c987b03197cb20051/1jelqgcbd';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+</body>
+
+</html>
